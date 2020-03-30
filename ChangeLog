@@ -1,3 +1,34 @@
+2020-03-23  Morten Welinder <terra@gnome.org>
+
+	* Release 1.14.47
+
+2020-02-20  Morten Welinder  <terra@gnome.org>
+
+	* thumbnailer/main.c (main): Plug leak.
+
+	* gsf/gsf-infile-msole.c (datetime_from_filetime): Propagate NULL
+	datetime.  Fixes #19.
+
+2020-01-28  Morten Welinder  <terra@gnome.org>
+
+	* gsf/gsf-docprop-vector.c: ignore deprecation warnings only very
+	locally.
+
+2019-10-18  Morten Welinder  <terra@gnome.org>
+
+	* gsf/gsf-output-gzip.c (gsf_output_gzip_class_init): Add
+	"deflate-level" attribute to control compression.  Must be set
+	before first write.  Based on code from Allin Cottrell.
+
+2019-10-16  Morten Welinder  <terra@gnome.org>
+
+	* gsf/gsf-output-memory.c (gsf_output_memory_steal_bytes): New
+	function.  Code from Allin Cottrell.
+
+2019-05-04  Morten Welinder <terra@gnome.org>
+
+	* configure.ac: Post-release bump.
+
 2019-05-04  Morten Welinder <terra@gnome.org>
 
 	* Release 1.14.46
