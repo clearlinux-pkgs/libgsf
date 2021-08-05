@@ -4,7 +4,7 @@
 #
 Name     : libgsf
 Version  : 1.14.47
-Release  : 3
+Release  : 4
 URL      : https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.47.tar.xz
 Source0  : https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.47.tar.xz
 Summary  : GNOME Structured File library
@@ -113,15 +113,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1585584650
+export SOURCE_DATE_EPOCH=1628201647
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -130,10 +130,10 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1585584650
+export SOURCE_DATE_EPOCH=1628201647
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libgsf
 cp %{_builddir}/libgsf-1.14.47/COPYING %{buildroot}/usr/share/package-licenses/libgsf/217bce14cea37348f2a0182adf35c02137ed9a01

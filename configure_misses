@@ -1,15 +1,15 @@
-Configure miss: whether gcc understands -Werror=unknown-warning-option
+Configure miss: Win32 platform
+Configure miss: g_chown
+Configure miss: sys/utime.h presence
+Configure miss: sys/utime.h usability
+Configure miss: whether -D_BSD_SOURCE is needed for caddr_t
+Configure miss: whether -D_BSD_SOURCE is needed for lstat
 Configure miss: whether gcc understands -Wbitwise
 Configure miss: whether gcc understands -Wcast-to-as
 Configure miss: whether gcc understands -Wdefault-bitfield-sign
 Configure miss: whether gcc understands -Wdo-while
+Configure miss: whether gcc understands -Werror=unknown-warning-option
 Configure miss: whether gcc understands -Wparen-string
 Configure miss: whether gcc understands -Wptr-subtraction-blows
 Configure miss: whether gcc understands -Wreturn-void
 Configure miss: whether gcc understands -Wtypesign
-Configure miss: whether -D_BSD_SOURCE is needed for caddr_t
-Configure miss: whether -D_BSD_SOURCE is needed for lstat
-Configure miss: sys/utime.h usability
-Configure miss: sys/utime.h presence
-Configure miss: g_chown
-Configure miss: Win32 platform
