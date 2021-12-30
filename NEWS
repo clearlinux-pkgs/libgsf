@@ -1,3 +1,12 @@
+libgsf 1.14.48
+
+Greg Hellings:
+	* Fix win32 build.
+
+Morten:
+	* Add "zip64" readable property of GsfInfileZip.
+
+--------------------------------------------------------------------------
 libgsf 1.14.47
 
 Allin Cottrell:
