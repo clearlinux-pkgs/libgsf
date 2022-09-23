@@ -4,7 +4,7 @@
 #
 Name     : libgsf
 Version  : 1.14.50
-Release  : 7
+Release  : 8
 URL      : https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.50.tar.xz
 Source0  : https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.50.tar.xz
 Summary  : GNOME Structured File library
