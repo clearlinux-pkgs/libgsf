@@ -4,7 +4,7 @@
 #
 Name     : libgsf
 Version  : 1.14.50
-Release  : 9
+Release  : 10
 URL      : https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.50.tar.xz
 Source0  : https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.50.tar.xz
 Summary  : GNOME Structured File library
@@ -113,7 +113,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1657765994
+export SOURCE_DATE_EPOCH=1664157634
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -133,11 +133,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1657765994
+export SOURCE_DATE_EPOCH=1664157634
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libgsf
-cp %{_builddir}/libgsf-1.14.50/COPYING %{buildroot}/usr/share/package-licenses/libgsf/217bce14cea37348f2a0182adf35c02137ed9a01
-cp %{_builddir}/libgsf-1.14.50/COPYING.LIB %{buildroot}/usr/share/package-licenses/libgsf/9a8724b113a48b8654879231e204c01029e94f92
+cp %{_builddir}/libgsf-%{version}/COPYING %{buildroot}/usr/share/package-licenses/libgsf/217bce14cea37348f2a0182adf35c02137ed9a01 || :
+cp %{_builddir}/libgsf-%{version}/COPYING.LIB %{buildroot}/usr/share/package-licenses/libgsf/9a8724b113a48b8654879231e204c01029e94f92 || :
 %make_install
 %find_lang libgsf
 
