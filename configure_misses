@@ -30,3 +30,9 @@ Configure miss: whether gcc understands -Wreturn-void
 Configure miss: whether gcc understands -Wreturn-void
 Configure miss: whether gcc understands -Wtypesign
 Configure miss: whether gcc understands -Wtypesign
+Configure miss: x86_64-generic-linux-gnu-file
+Configure miss: x86_64-generic-linux-gnu-file
+Configure miss: xmlNanoHTTPClose
+Configure miss: xmlNanoHTTPClose
+Configure miss: xmlNanoHTTPOpen
+Configure miss: xmlNanoHTTPOpen
